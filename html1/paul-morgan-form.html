@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paul Morgan Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div>
+            <label for="firstName">First Name: *</label>
+            <input type="text" name="First name" id="firstName">
+        </div>
+        <div>
+            <label for="firstName">Last Name: *</label>
+            <input type="text" name="Last name" id="lastName">
+        </div>
+        <div>
+            <label for="firstName">Email Address: *</label>
+            <input type="text" name="Email Address" id="emailAddress">
+        </div>
+        <div>
+            <label for="password">Password: *</label>
+            <input type="password" name="Password" id="password">
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password: *</label>
+            <input type="password" name="confirmPassword" id="confirmPassword">
+        </div>
+        <div>
+            <label for="birthday">Birthday: *</label>
+            <input type="date" name="Birthday" id="birthday">
+        </div>
+        <div>
+            <p>Gender Identity</p>
+        </div>
+        <div>
+            <input type="radio" name="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Non-Binary" id="nonBinary">
+            <label for="nonBinary">Non-Binary</label>
+            <input type="radio" name="No Answer" id="noAnswer">
+            <label for="noAnswer">I prefer not to answer</label>
+        </div>
+        <div>
+            <p>A short description of myself:</p>
+            <textarea id="birthday"></textarea>
+        </div>
+        <div>
+            <label for="language" id="language">Favorite language:</label>
+            <select name="Language" id="language">
+                <option value="Javascript">Javascript</option>
+                <option value="HTML">HTML</option>
+                <option value="Python">Python</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="Updates" id="updates">
+            <label for="updates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" name="Submit" id="submit">
+        </div>
+        <div>
+            <p>*Indicates a required field</p>
+        </div>
+    </form>
+</body>
