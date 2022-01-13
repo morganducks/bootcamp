@@ -1,0 +1,24 @@
+* {
+    padding: 5px;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+}
+
+h1 span {
+    color:aqua;
+}
+
+h2 {
+    color: white;
+    background-color:blueviolet;
+    font-style: italic;
+    text-align: center;
+}
+
+.contactUs {
+    background-color:cornflowerblue;
+    text-align: right;
+}
