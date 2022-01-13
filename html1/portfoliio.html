@@ -8,16 +8,13 @@
 
 <body>
     <h1>Paul Morgan</h1>
-    <img src="paul-suit.jpg" alt="Paul Morgan">
+    <img src="paul-suit.jpg" width="150" alt="Paul Morgan">
     <div>
-        <img src="GitHub-Mark.png" width="50px" alt="GitHub logo"><a href="https://github.com/morganducks/bootcamp">My
-            GitHub</a>&nbsp; <img src="900px-LinkedIn_logo_initials.png" width="50px" alt="LinkedIn logo"><a
-            href="https://www.linkedin.com/in/paulsmorgan/">My LinkedIn</a>&nbsp;<img src="email-icon.jpg" width="50px"
-            alt="email icon"><a href="mailto:morganducks@gmail.com">My Email</a>&nbsp;
+        <img src="GitHub-Mark.png" width="50" alt="GitHub logo"><a href="https://github.com/morganducks/bootcamp">My GitHub</a>&nbsp; <img src="900px-LinkedIn_logo_initials.png" width="50" alt="LinkedIn logo"><a href="https://www.linkedin.com/in/paulsmorgan/">My LinkedIn</a>&nbsp;<img src="email-icon.jpg" width="50" alt="email icon"><a href="mailto:morganducks@gmail.com">My Email</a>&nbsp;
     </div>
     <div>
         <h2>Technologies</h2>
-        <table>
+        <table border="1">
             <tr>
                 <th>Front-End</th>
                 <th>SASS Hybris</th>
@@ -50,10 +47,15 @@
             <div>
                 <label for="fullName">Name:</label>
                 <input type="text" name="Name" id="fullName">
+                <label for="emailAddress">Email Address:</label>
+                <input type="text" name="Email Address" id="emailAddress">
             </div>
             <div>
-                <label for="firstName">Email Address: *</label>
-                <input type="text" name="Email Address" id="emailAddress">
+                <label for="message">Message:</label>
+                <textarea id="message"></textarea>
+            </div>
+            <div>
+                <button type="submit" name="Send Message" id="submit">Send Message</button>
             </div>
         </form>
     </div>
