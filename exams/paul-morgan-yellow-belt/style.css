@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif
+}
+
+.mainHeader {
+    background-color: #119b9d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000
+}
+
+.navContainer {
+    width: 750px;
+    margin: auto
+}
+
+.nav {
+    display: flex;
+    padding-bottom: 20px
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-basis: 50%
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px
+}
+
+h1 {
+    color: #fff;
+    font-size: 35px
+}
+
+.navLinks {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    align-items: center;
+    padding-bottom: 20px
+}
+
+.navText {
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 30px
+}
+
+.Btn {
+    padding: 5px 30px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-decoration: none;
+    color: purple;
+    cursor: pointer
+}
+
+.navLinks .Btn {
+    margin-left: 20px
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.lookingForContainer {
+    flex-basis: 30%;
+    margin-right: 25px
+}
+
+#petChoice {
+    padding: 5px 10px;
+    border: 2px solid #000;
+    width: 100%
+}
+
+.bestFriendContainer {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: end;
+    padding-top: 20px
+}
+
+.dropdown {
+    display: flex
+}
+
+.infoText {
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 14px
+}
+
+.infoContainer .Btn {
+    padding: 5px 30px;
+    border-radius: 0;
+    border: 2px solid #000;
+    background-color: purple;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 2px 2px #000
+}
+
+.infoPic {
+    height: 30px;
+    margin-right: 10px
+}
+
+form {
+    flex: 3;
+    position: relative;
+    width: 100%
+}
+
+.searchArea {
+    height: 20px;
+    padding: 5px 10px;
+    border: 2px solid #000
+}
+
+.searchText {
+    position: absolute;
+    font-size: 12px;
+    color: gray;
+    top: 10px;
+    left: 10px
+}
+
+.contentContainer {
+    width: 750px;
+    margin: 30px auto
+}
+
+.petListing {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px
+}
+
+.darker {
+    background-color: #dadada !important
+}
+
+.pets {
+    display: flex;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px
+}
+
+.petPic {
+    width: 110px;
+    margin-right: 20px
+}
+
+.petName {
+    flex: 3;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.petName h2 {
+    margin-bottom: 5px
+}
+
+.contentContainer .Btn {
+    padding: 5px 30px;
+    border-radius: 0;
+    border: 2px solid #000;
+    background-color: #17cfd1;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 2px 2px #000
+}
+
+.likeButton {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center
+}
+
+.likes {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.likeButton .Btn {
+    margin-top: 20px
+}

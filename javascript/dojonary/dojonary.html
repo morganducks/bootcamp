@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dojonary</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="navBar">
+            <div class="navElementHeader">
+                <h1>Dojonary</h1>
+                <form>
+                    <label for="searchField" class="searchText">Search</label>
+                    <input id="searchField" name="Search" class="searchArea">
+                </form>
+            </div>
+            <button onclick="turnoff(this)" class="Btn">Log In</button>
+        </div>
+        <div class="contentContainer">
+            <div class="leftContent">
+                <div class="mainBox">
+                    <div class="wordBox">
+                        <div class="word">Ninja</div>
+                        <div class="wordSubhead">noun</div>
+                        <p>Plural: <span class="pluralText">ninjas</span></p>
+                        <a href="" onclick="alert('Ninja was liked')" class="Btn">13 Likes</a>
+                    </div>
+                    <div class="ninjaDefinition">
+                        <p>A practitioner skilled in the <a href="">Japanese</a> art of <a href="">ninjutsu</a></p>
+                    </div>
+                </div>
+                <div class="mainBox">
+                    <div class="wordBox">
+                        <div class="word">Ninja</div>
+                        <div class="wordSubhead">noun</div>
+                        <p>Plural: <span class="pluralText">ninjas</span></p>
+                        <a href="" class="Btn" onclick="alert('Ninja was liked')">37 Likes</a>
+                    </div>
+                    <div class="ninjaDefinition">
+                        <p>A programmer who breaks down problems with zen-like focus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightContent">
+                <div class="mainBox">
+                    <div class="dojonaryText">
+                        Dojonary is defined by YOU
+                    </div>
+                    <div onclick="hide(this)">
+                        <div class="Btn">Add definition</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

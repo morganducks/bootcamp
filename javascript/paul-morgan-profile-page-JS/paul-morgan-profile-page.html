@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="nav">
+                <div class="nav-title">
+                    <h1>Profile</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" id="active">My Profile</a></li>
+                    <li><a href="#">Find Connections</a></li>
+                </ul>
+                <div class="sign-in">
+                    <div class="nav-btn"><a href="http://wwww.paulmorgandesigns.com">Sign Out</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <div class="left-side-content">
+                <div class="card-container">
+                    <div class="blue-header">
+                        <div class="user-photo">
+                            <img src="images/paul-suit.jpg" alt="User Name">
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <h1 id="userName">Paul Morgan</h1>
+                        <p class="location-marker"><img src="images/map-marker.png" class="map-image"
+                                alt="Location">Seattle
+                        </p>
+                        <p>Developer | Designer | Musician</p>
+                        <p>Your do-everything unicorn</p>
+                        <div class="link" onclick="changeName()"><img class="gear" src="images/gear.png" alt="User link"><div id="editProfile">Edit profile</div>
+                    </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience-header">
+                        <div class="experience-content-header">Education</div>
+                    </div>
+                    <div class="experience-body">
+                        <div class="experience-item">
+                            <h3>Tirebuyer.com</h3>
+                            <div class="experience-text">Sept. 2015-Now</div>
+                            <p>I&rsquo;m in the second week of a two-stack program (MERN) at Coding Dojo. Key skills:
+                                HTML; CSS; SAP Hybris CMS management; Sketch; Figma; Photoshop; Illustrator; UI/UX.
+                                Coming
+                                soon: JavaScript, React, Node.js</p>
+                            <ul>
+                                <li>Quickly prototype user experiences to the fidelity required to gain insight into
+                                    user testing.</li>
+                                <li>Design, code, post and manage responsive landing pages with cross-browser
+                                    capabilities, allowing our marketing team to increase organic SEO and to test
+                                    messaging and imagery.</li>
+                                <li> Help assess the technical impact of design decisions.</li>
+                                <li>Provide in-browser proof of concept.</li>
+                                <li>Ensure that designs and the code provide progressive enhancement and accessibility
+                                    for all users.</li>
+                                <li>Support and enhance reusable components to ensure a comprehensive design system for
+                                    each site.</li>
+                                <li>Code and develop most of the pages on <a href="tirebuyer.com">tirebuyer.com</a>, <a
+                                        href="tirepros.com">tirepros.com</a>, atd-us.com, and <a
+                                        href="ntd-canada.com">ntd-canada.com</a>.</li>
+                                <li>Collaborate closely with front end and back end developers to ensure a smooth
+                                    transition from design to build to maintenance.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-item">
+                            <h3>Liberty Mutual</h3>
+                            <div class="experience-text">Sept. 2007-July 2014</div>
+                            <p>Key skills: Lead designer for brand of Fortune 100 company; Adobe Creative Suite; brand
+                                building; brand messaging; motion graphics; video editing; collateral design; client
+                                collaboration; social media content creation and management; Flash; understanding of
+                                HTML and CSS code, and the possibilities and limitations of both; clear communication
+                                with developers.</p>
+                            <ul>
+                                <li>Quickly prototype user experiences to the fidelity required to gain insight into
+                                    user testing.</li>
+                                <li>Design, code, post and manage responsive landing pages with cross-browser
+                                    capabilities, allowing our marketing team to increase organic SEO and to test
+                                    messaging and imagery.</li>
+                                <li> Help assess the technical impact of design decisions.</li>
+                                <li>Provide in-browser proof of concept.</li>
+                                <li>Ensure that designs and the code provide progressive enhancement and accessibility
+                                    for all users.</li>
+                                <li>Support and enhance reusable components to ensure a comprehensive design system for
+                                    each site.</li>
+                                <li>Code and develop most of the pages on tirebuyer.com, tirepros.com, atd-us.com, and
+                                    ntd-canada.com.</li>
+                                <li>Collaborate closely with front end and back end developers to ensure a smooth
+                                    transition from design to build to maintenance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side-content">
+                <div class="connection">
+                    <div class="connection-header">
+                        <div class="connection-request-value">
+                            <div id="connectionRequestNumber">
+                                2
+                            </div>
+                        </div>
+                        <div class="side-content-header">Connection Requests</div>
+                    </div>
+                    <div class="request-body">
+                        <div class="request-group" id="disappear">
+                            <div class="request-photo"><img src="images/adrien-s.jpg" alt="Adrien"></div>
+                            <div class="request-name">Adrien</div>
+                            <div class="request-accept" onclick="addLike()"><img src="icons/accept-circle.png" alt="Accept">
+                            </div>
+                            <div class="request-deny" onclick="addNoLike()"><img src="icons/close-circle.png" alt="Deny"></div>
+                        </div>
+                        <div class="request-group" id="disappear2">
+                            <div class="request-photo"><img src="images/alayne-s.jpg" alt="Alayne"></div>
+                            <div class="request-name">Alayne</div>
+                            <div class="request-accept" onclick="addLike1()"><img src="icons/accept-circle.png" alt="Accept">
+                            </div>
+                            <div class="request-deny" onclick="addNoLike1()"><img src="icons/close-circle.png" alt="Deny"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="connection">
+                    <div class="connection-header">
+                        <div class="connection-value">
+                            <div class="connection-number" id="connectionNumber">
+                                500
+                            </div>
+                        </div>
+                        <div class="side-content-header">Your Connections</div>
+                    </div>
+                    <div class="connection-body">
+                        <div class="connection-group">
+                            <div class="connection-photo"><img src="images/arry-s.jpg" alt="Arry"></div>
+                            <div class="connection-name">Arry</div>
+                        </div>
+                        <div class="connection-group">
+                            <div class="connection-photo"><img src="images/jane-m.jpg" alt="Jane"></div>
+                            <div class="connection-name">Jane</div>
+                        </div>
+                        <div class="connection-group">
+                            <div class="connection-photo"><img src="images/phil-s.jpg" alt="Phil"></div>
+                            <div class="connection-name">Phil</div>
+                        </div>
+                        <div class="connection-group">
+                            <div class="connection-photo"><img src="images/todd-s.jpg" alt="Todd"></div>
+                            <div class="connection-name">Todd</div>
+                        </div>
+                    </div>
+                    <div class="connection-link"><a href="">View more</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+

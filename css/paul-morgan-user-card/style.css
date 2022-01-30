@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+}
+
+.card-container {
+    width: 600px;
+    margin: auto;
+}
+
+.blue-header {
+    background-color: deepskyblue;
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.user-photo {
+    position: absolute;
+    bottom: -50%;
+    left: 20px;
+    width: 50px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    border: 2px solid lightgray;
+    width: 100px;
+    height: 100px;
+}
+
+.user-photo img {
+    width: 100px;
+}
+
+.user-info {
+    padding: 60px 20px 20px;
+    border: 2px solid lightgray;
+    border-top: 0px;
+}
+
+.location-marker {
+    margin: 10px 0 10px 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.map-image {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.link {
+    margin: 10px 0 0 0;
+    display: flex;
+}
+
+.gear {
+    width: 20px;
+    margin-right: 10px;
+}

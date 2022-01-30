@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.mainContainer {
+    width: 700px;
+    margin: auto;
+}
+
+.headerContainer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0px auto 30px auto;
+}
+
+
+h2 {
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    width: 700px;
+    margin: 30px auto 30px auto;
+    display: flex;
+    gap: 10px
+}
+
+.userContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+    align-items: center;
+    height: 200px;
+}
+
+.likesContainer {
+    flex: 3;
+}
+
+.likesBox {
+    display: flex;
+    border: 2px solid black;
+    padding: 20px;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+
+.userRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+
+}
+
+.userRow h3 {
+    flex-basis: 50%;
+    font-size: 28px;
+}
+
+p {
+    flex-basis: 25%;
+    font-size: 20px;
+    font-weight: 600
+}
+
+button {
+    flex-basis: 25%;
+    padding: 10px 20px;
+    background-color: yellow;
+    font-size: 18px;
+    font-weight: 600;
+}

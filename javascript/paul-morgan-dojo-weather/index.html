@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paul Morgan Dojo Weather</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="headerContainer">
+        <div class="navRow">
+            <div class="siteName">
+                Dojo Weather
+            </div>
+            <div class="citiesText burbank" onclick="burbankSelected()">
+                Burbank
+            </div>
+            <div class="citiesText chicago" onclick="chicagoSelected()">
+                Chicago
+            </div>
+            <div class="citiesText dallas" onclick="dallasSelected()">
+                Dallas
+            </div>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <div class="cityRow">
+            <h1 class="city">San Jose</h1>
+                
+                <div class="tempSection">
+                Show temperature in
+                <select class="" name="changeTemp" onchange="changeTemp()">
+                    <option value="celcius">&deg;C</option>
+                    <option value="Faren">&deg;F</option>
+                </select>
+            </div>
+        </div>
+        <div class="forecastRow">
+            <div class="forecastDay">
+                <div class="dayText">
+                    Today
+                </div>
+<img class="forecastImage" src="assets/some_rain.png" alt="Some Rain">
+                <div class="forecastText">
+                    Some rain
+                </div>
+                <div class="ForecastTempRow">
+                    <div class="highTemp"><span class="highTempNum">24</span></span>&deg;
+                    </div>
+                    <div class="lowTemp"><span class="highTempNum">18</span>&deg;
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecastDay">
+                <div class="dayText">
+                    Tomorrow
+                </div>
+                
+                    <img class="forecastImage" src="assets/some_sun.png" alt="Some Sun">
+                <div class="forecastText">
+                    Some sun
+                </div>
+                <div class="ForecastTempRow">
+                    <div class="highTemp"><span class="highTempNum">27</span>&deg;
+                    </div>
+                    <div class="lowTemp"><span class="highTempNum">19</span>&deg;
+                    </div>
+                </div>
+            </div>
+            <div class="forecastDay">
+                <div class="dayText">
+                    Saturday
+                </div>
+                
+                    <img class="forecastImage" src="assets/some_clouds.png" alt="Some Clouds">
+                <div class="forecastText">
+                    Some clouds
+                </div>
+                <div class="ForecastTempRow">
+                    <div class="highTemp"><span class="highTempNum">21</span>&deg;
+                    </div>
+                    <div class="lowTemp"><span class="highTempNum">16</span>&deg;
+                    </div>
+                </div>
+            </div>
+            <div class="forecastDay">
+                <div class="dayText">
+                    Sunday
+                </div>
+
+                <img class="forecastImage" src="assets/some_sun.png" alt="Some Sun">
+                <div class="forecastText">
+                    Some sun
+                </div>
+                <div class="ForecastTempRow">
+                    <div class="highTemp"><span class="highTempNum">26</span>&deg;
+                    </div>
+                    <div class="lowTemp"><span class="highTempNum">21</span>&deg;
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cookieBox" id="cookieID">
+            <img src="assets/cookie.png" alt="accept cookies">
+            <div class="agreeText">
+                <div class="cookieHead">Stop! Cookie time.
+                </div>
+                <p>We use cookies and other text that goes here about the cookies</p>
+            </div>
+            <button class="acceptButton" onclick="userAccepts()">
+            I Accept
+            </button>
+        </div>
+        
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>

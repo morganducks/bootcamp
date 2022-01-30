@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif
+}
+
+.mainContainer {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    background-color: #d3d3d3;
+    align-items: center;
+    justify-content: space-between
+}
+
+.navElementHeader {
+    display: flex;
+    flex-basis: 80%;
+    align-items: center
+}
+
+h1 {
+    font-size: 35px;
+    flex: 1;
+    margin-right: 30px
+}
+
+form {
+    flex: 3;
+    position: relative
+}
+
+.searchArea {
+    width: 80%;
+    height: 30px;
+    border: 2px solid #000
+}
+
+.searchText {
+    position: absolute;
+    top: 8px;
+    left: 8px
+}
+
+.Btn {
+    padding: 5px 30px;
+    border: 1px solid #000;
+    background-color: #00f;
+    color: #fff;
+    box-shadow: 3px 3px #000;
+    text-decoration: none
+}
+
+.contentContainer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap
+}
+
+.leftContent {
+    flex: 2
+}
+
+.rightContent {
+    flex: 1;
+    margin-left: 20px
+}
+
+.mainBox {
+    border: 2px solid #000;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px
+}
+
+.wordBox {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-right: 20px
+}
+
+.word {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 5px
+}
+
+.wordSubhead {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic
+}
+
+.wordBox p {
+    margin-top: 5px
+}
+
+.pluralText {
+    font-style: italic
+}
+
+.wordBox .Btn {
+    background-color: bisque;
+    color: #000;
+    margin: 10px;
+    padding: 10px 20px
+}
+
+.ninjaDefinition {
+    display: flex;
+    flex: 2;
+    padding: 20px;
+    justify-content: center;
+    align-items: center
+}
+
+.ninjaDefinition p {
+    font-size: 20px
+}
+
+.rightContent .mainBox {
+    border: 2px solid #000;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    margin-bottom: 20px
+}
+
+.dojonaryText {
+    font-size: 20px;
+    font-weight: 600
+}
+
+.rightContent .Btn {
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 0;
+    background-color: green
+}

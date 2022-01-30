@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.searchButton {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(0, 167, 167);
+    background-color: white;
+    border: 2px solid rgb(0, 167, 167);
+    border-radius: 20px;
+    padding: 10px 70px;
+    margin: 20px;
+}
+
+.col {
+    flex: 1;
+    padding:20px;
+    margin:10px;
+    background-color: gray;
+}
+.col-2 {
+    flex: 2;
+    padding: 20px;
+    margin:10px;
+    background-color: yellow;
+}
+.col-3 {
+    flex: 3;
+    padding: 20px;
+    margin:10px;
+    background-color: blue;
+}
+
+.nav-container {
+    background-color: black;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: auto;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav li a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-title {
+    text-align: left;
+    color: white;
+    font-weight: 400;
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 3;
+}
+
+#active {
+    font-weight: bold;
+}
+
+.sign-in {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav-btn {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.user-photo {
+    position: absolute;
+    bottom: -50%;
+    left: 20px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    border: 2px solid lightgray;
+    width: 100px;
+    height: 100px;
+}
+
+.user-photo img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
