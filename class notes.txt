@@ -1,0 +1,90 @@
+
+
+JS
+
+var arr = [1,2,3,"4",true]
+console.log(arr[3]);
+
+arr.push("Eugene");
+arr.pop();
+
+
+Object model
+target specific key
+
+key: "value"
+key: value    /// for variable
+key: number  /////
+
+var obj = {
+name: "Paul",
+age: 52,
+}
+
+
+obj["hometown"] = "Eugene"  //// adds to array
+
+
+console.log(obj.name);
+
+
+
+
+String functions
+target specific character in string
+String interpolation using $
+
+string is also a container
+
+var char = "thing"
+console.log(char[2]);
+
+It's an index of the string. [2] calls the third character
+
+
+FOR LOOPS 
+
+Want to // create an array to display in a loop in the console
+
+var arr = ["buts","ifs","ands","whats"];
+
+for (var i = 0; i < arr.length; i++); {
+console.log(i);
+}
+
+
+
+
+
+WHILE LOOP
+if DON'T you know where your stopping place (Not True) is going to be
+
+while (true) {
+//do stuff
+//if a certain condition is met
+
+break
+
+}
+
+//One = sign assigns
+//Two == checks if its true
+
+
+
+
+
+
+BUILT INS
+document.querySelectorAll(".classname")
+
+function handleClick(e) {
+
+}
+
+//Event handler action ("click") drops the "on"
+
+//puts all same elements in an array
+
+//console has NODE tab
+
