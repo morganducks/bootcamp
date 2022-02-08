@@ -1,35 +1,16 @@
-// function reverse(arr) {
-//     firstValue = 0;
-//     lastValue = arr.length - 1; // = 4
-//     while(firstValue < lastValue) { // false statement ends loop : once first = 3 second = 3
-//         var storeFirstValue = arr[firstValue];
-//         arr[firstValue] = arr[lastValue];
-//         arr[lastValue] = storeFirstValue;
-//         console.log(firstValue + "test");
-//         console.log(lastValue + "test");
-//         firstValue++;
-//         lastValue--;
-//         console.log(firstValue);
-//         console.log(lastValue);
-//         console.log(arr);
-//     }
+        
+        document.getElementById("button").onclick = () => setBackgroundColorById("paragraph", "blue");
 
+        document.getElementById("alert").onclick = () => alert(document.getElementById("popup-input").value);
 
-//     return arr;
-// }
+        document.getElementById("hover-this").onmouseover = () => setBackgroundColorById("body", "red");
 
-// var result = reverse(["a", "b", "c", "d", "e"]);
-// console.log(result); // we expect back ["e", "d", "c", "b", "a"]
+        document.getElementById("hover-this").onmouseout = () => setBackgroundColorById("body", "white");
 
+        (id) => document.getElementById(id).value;
 
+        (id, color) => document.getElementById(id).style = "background-color: " + color;
 
-//  // start with just one example; and then add one example more; start with simple case.
+        mouseOverFunction = (el) => el.style = "background-color: black";
 
-
-// for loop 
-// three main settings for(let where-to-start; condition telling it when to stop; but if still true enters loop tells it what-to-do;)
-
-for(let i = 0; i < 5; i++) {
-// instruction zone
-console.log("hello")
-}
+        //why can't I console.log these?
