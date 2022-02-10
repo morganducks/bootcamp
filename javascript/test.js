@@ -1,16 +1,60 @@
-        
-        document.getElementById("button").onclick = () => setBackgroundColorById("paragraph", "blue");
+const getUserChoice = userInput => {
+        userInput = userInput.toLowerCase();
+        if (userInput === 'rock' || userInput === 'scissors' || userInput === 'paper') {
+                return userInput;
+        } else {
+                console.log('Error')
+        }
+};
 
-        document.getElementById("alert").onclick = () => alert(document.getElementById("popup-input").value);
+const getComputerChoice = () => {
+        randomNumber = Math.floor(Math.random() * 3);
+        switch (randomNumber) {
+                case 0:
+                        return 'rock';
+                case 1:
+                        return 'paper'
+                case 2:
+                        return 'scissors'
+        }
+};
 
-        document.getElementById("hover-this").onmouseover = () => setBackgroundColorById("body", "red");
 
-        document.getElementById("hover-this").onmouseout = () => setBackgroundColorById("body", "white");
+const determineWinner = (userChoice, computerChoice) => {
+        if (userChoice === computerChoice) {
+                return 'The game is a tie!'
+        }
+        if (userChoice === 'rock') {
+                if (computerChoice === 'paper') {
+                        return 'sorry, the computer won'
+                } else {
+                        return 'you won!'
+                }
+        }
+        if (userChoice === 'paper') {
+                if (computerChoice === 'scissors') {
+                        return 'sorry, the computer won'
+                } else {
+                        return 'you won!'
+                }
+        }
+        if (userChoice === 'scissors') {
+                if (computerChoice === 'rock') {
+                        return 'sorry, the computer won'
+                } else {
+                        return 'you won!'
+                }
+        }
+}
 
-        (id) => document.getElementById(id).value;
 
-        (id, color) => document.getElementById(id).style = "background-color: " + color;
+playGame = () => {
+        let userChoice = getUserChoice('rock');
+        console.log(userChoice + 'test');
+        let computerChoice = getComputerChoice();
+        console.log(computerChoice + 'comp');
+        console.log(determineWinner(userChoice, computerChoice));
+}
 
-        mouseOverFunction = (el) => el.style = "background-color: black";
 
-        //why can't I console.log these?
+playGame();
