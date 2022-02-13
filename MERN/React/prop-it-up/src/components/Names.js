@@ -12,7 +12,7 @@ const Names = (props) => {
                 Age: { props.age }
             </p>
             <p>
-               Hair Color: {props.hairColor}
+               Hair Color: { props.hairColor }
             </p>
         </div>
     );
