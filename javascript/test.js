@@ -58,3 +58,33 @@ playGame = () => {
 
 
 playGame();
+
+const animals = [
+        'horse',
+        'dog',
+        'fish',
+        'cat',
+        'bird'
+    ];
+    
+    
+    //****************************************************************************************************************/
+    // get firstAnimal and secondAnimal
+    //    then put the REST of the animals in a new array called otherAnimals
+    // ... = REST OPERATOR, IT GRABS US THE REST OF A DATA SET:
+//     const [firstAni, secondAni, thirdAnimal, ...otherAnimals] = animals;
+    
+//     console.log(otherAnimals);
+
+
+let person = {
+    firstName: 'Billy',
+    lastName: 'Bob',
+    email: 'bob@email.com',
+    username: 'BillyB',
+    password: 'hmmmmmm',
+};
+
+const personCopy = { ...person };
+
+console.log(personCopy, "Original: ", person);

@@ -10,19 +10,19 @@ function App() {
       age = { 52 }
       hairColor   = { "Gray" } 
       />
-            <Names 
+      <Names 
       firstName = { "Brian" }
       lastName = { "Campbell" }
       age = { 45 }
       hairColor   = { "Brown" } 
       />
-            <Names 
+      <Names 
       firstName = { "Annie" }
       lastName = { "Cumberbatch" }
       age = { 27 }
       hairColor   = { "Blonde" } 
       />
-            <Names 
+      <Names 
       firstName = { "Jack" }
       lastName = { "Reacher" }
       age = { 36 }

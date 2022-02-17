@@ -1,21 +1,23 @@
-// Here we create the Header Component that will receive props and we know we want to have a users
-//     first and last name
 import React from 'react';
     
 const Names = (props) => {
+
+    const {firstName,lastName,age,hairColor} = props;
     return (
         <div>
             <h1>
-                { props.firstName } { props.lastName }
+                { firstName } { lastName }
             </h1>
             <p>
-                Age: { props.age }
+                Age: { age }
             </p>
             <p>
-               Hair Color: { props.hairColor }
+               Hair color: {hairColor}
             </p>
         </div>
     );
 }
 export default Names;
+
+
 

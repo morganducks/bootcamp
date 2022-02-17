@@ -1,3 +1,47 @@
+npx create-react-app your-project-name-here
+
+
+
+
+
+import './App.css';
+import Users from './components/Users'
+
+function App() {
+
+
+  
+  return (
+    <div className="App">
+<Users />
+    </div>
+  );
+}
+
+export default App;
+
+
+import React from 'react';
+
+const Users = (props) => {
+    return (
+        <div>
+            <h1>
+                Paul
+            </h1>
+            <p>
+                Age:
+            </p>
+            <p>
+               Hair color:
+            </p>
+        </div>
+    );
+}
+export default Users;
+
+
+
 let raceNumber = Math.floor(Math.random() * 1000);
 
 var earlyRegistration = false;
