@@ -1,7 +1,21 @@
 npx create-react-app your-project-name-here
 
+// const userInfo = () => {
+
+//     e.preventDefault();
+
+//     newUserInfo = () => {
+//         [
+//             firstName: firstName,
+//             lastName: lastName,
+//             email: email,
+//             password: password,
+//             confirmPassword: confirmPassword,
+//         ]
+//     }
 
 
+-------------------------------
 
 
 import './App.css';
