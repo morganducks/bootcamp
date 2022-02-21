@@ -76,7 +76,7 @@ const animals = [
     
 //     console.log(otherAnimals);
 
-
+  
 let person = {
     firstName: 'Billy',
     lastName: 'Bob',
@@ -88,3 +88,66 @@ let person = {
 const personCopy = { ...person };
 
 console.log(personCopy, "Original: ", person);
+
+
+
+--------------------------------------
+const [passwordError, setPasswordError] = useState("");
+const [confirmPasswordError, setConfirmPasswordError] = useState("");
+
+const handlePassword = (e) => {
+        setPassword(e.target.value);
+        if(e.value.length < 8) {
+            setPasswordError("Passwords must be 8 characters")
+        }
+        else {
+            setPasswordError("")
+            
+        }
+    }
+
+
+    const handleConfirmPassword = (e) => {
+        setConfirmPassword(e.target.value);
+        if(e.target.value !== password) {
+            setConfirmPasswordError("Passwords must match!")
+        }
+        else {
+            setConfirmPasswordError("")
+        }
+    }
+
+
+
+    
+    const handleConfirmPassword = (e) => {
+        setConfirmPassword(e.target.value);
+        if(e.target.value !== password) {
+            setConfirmPasswordError("Passwords must match!")
+        }
+        else {
+            setConfirmPasswordError("")
+        }
+    }
+
+    
+    <label>Password:</label>
+    <input type="text" onChange={(e) => 
+      handlePassword(e)} />
+   {
+   passwordError ?
+   <p>{passwordError}</p>
+   :null
+}
+</div>
+<div>
+    <label>Confirm Password:</label>
+    <input type="text" onChange={(e) => { 
+        handleConfirmPassword(e)
+  }} />
+
+   {
+   confirmPasswordError ?
+   <p>{confirmPasswordError}</p>
+   :null
+}
