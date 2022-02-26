@@ -38,19 +38,23 @@ const styled2 = (markedChecked) => {
     }
 }
 
+
+//I'm not sure how this works still
+
     function handleChecked(todo) {
         //parses whether todo is markedChecked
         todo.markChecked = !todo.markChecked;
         //maintains state of todoList if it's not checked, if it is checked passes markedChecked into array
+
+        //not sure how this works either
         setTodoList([...todoList]);
     }
-
-
 
 
 return(
     <div>
         {
+            //tracks every "todo" added to the 
        todoList.map((todo, index) => (
            <div key={index}>
                {/* class as a funtion "styled", changes CSS tag based on boolean */}
