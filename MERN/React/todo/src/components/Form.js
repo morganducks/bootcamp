@@ -16,6 +16,7 @@ const submitHandler = (e) =>  {
         todoText: todoText,
         //creates random key id: for each entry
         id: Math.floor(Math.random() * 10000).toString(),
+        //doesn't look like we needed markedChecked key. Adds the value when the function is run in Display.js. Is he checkbox assigned "false" automatically?
     }])
     setTodoText("");
     //reset setTodoText
