@@ -24,7 +24,7 @@ function App() {
       <ul>
         {/* identifies data and creates new array, places in pokemon variable */}
         {pokemonNames.map((pokemon, index) => (
-          // runs tells li to reference array and populate pokemon.value
+          //  tells li to reference array and populate pokemon.value
           <li key={index}><a href={pokemon.url}>{pokemon.name}</a></li>
         ))}
       </ul>
