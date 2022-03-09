@@ -6,19 +6,24 @@ const Form = (props) => {
 
 
     const handleColor = (e) => {
-        setColor("");
+        setColor(e.target.value);
     }
+    
+
 
     return (
         <div>
 <h1>something</h1>
 <form>
     <div>
-        <input type="text" onchange={ (e) => {
+        <p>Color</p>
+        <input type="text" onChange={ (e) => {
             handleColor(e);
+
         } } >
 
         </input>
+        <div>{color}</div>
     </div>
 </form>
 </div>

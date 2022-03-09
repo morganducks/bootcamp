@@ -1,0 +1,27 @@
+db.students.insert({name: "Joe", home_state: "California", lucky_number: 12, birthday: {month: 4, day: 19, year: 1969}})
+
+db.students.insert({name: "Franklin", home_state: "Washington", lucky_number: 20, birthday: {month: 5, day: 2, year: 1980}})
+
+db.students.insert({name: "Larry", home_state: "California", lucky_number: 10, birthday: {month: 7, day: 14, year: 2004}})
+
+db.students.insert({name: "Franklin", home_state: "Washington", lucky_number: 20, birthday: {month: 5, day: 2, year: 1980}},{name: "Larry", home_state: "California", lucky_number: 10, birthday: {month: 7, day: 14, year: 2004}},{name: "Mary", home_state: "Washington", lucky_number: 121, birthday: {month: 11, day: 20, year: 1969}})
+
+db.students.insert({name: "Lisa", home_state: "California", lucky_number: 1, birthday: {month: 12, day: 25, year: 1978}})
+
+db.students.insert({name: "Joe", home_state: "California", lucky_number: 12, birthday: {month: 4, day: 19, year: 2000}})
+
+db.students.find({$and: [{lucky_number: {$gt: 0}},{lucky_number: {$lt: 10}}]}).pretty()
+
+db.students.update({name: "Franklin"},{$set: {interests: ["brunch","MongoDB","coding"]}}) 
+
+db.students.update({name: "Franklin"},{$push: {interests: "TV"}})
+
+db.students.update({name: "Larry"},{$pull: {interests: "taxes"}})
+
+db.students.remove({home_state: "California"})
+
+db.students.remove({name: "Lisa"})
+
+db.students.remove({lucky_number: {$gt: 5}}, true)
+
+db.students.updateMany({},{$inc: {number_of_belts: 1}}) 

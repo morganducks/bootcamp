@@ -8,7 +8,7 @@ const Colors = (props) => {
 
 
     return(
-<div>Something</div>
+<div></div>
 
     )
 }
