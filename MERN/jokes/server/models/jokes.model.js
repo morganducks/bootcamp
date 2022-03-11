@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const jokesSchema = new mongoose.Schema({
 
-setup {
+setup: {
     type: String,
     enum: [
         "Where do programmers hang out?"
@@ -12,7 +12,7 @@ setup {
     ]
 },
 
-punchline {
+punchline: {
     type: String,
     enum: [
         "Foo Bar"
