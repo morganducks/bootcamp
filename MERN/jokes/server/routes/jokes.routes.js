@@ -1,13 +1,13 @@
-const jokesController = require("../controllers/jokes.controller");
+const JokesController = require("../controllers/jokes.controller");
 
-module.exports=(app) =>{
-    app.get("/api/jokes", jokesController.findAllJokes)
+module.exports=(app) => {
+    app.get("/api/jokes", JokesController.findAllJokes)
 
-    app.post("/api/jokes", jokesController.createNewJoke)
+    app.post("/api/jokes/create", JokesController.createNewJoke)
     
-    app.get("/api/jokes/:id", jokesController.findOneJoke)
+    app.get("/api/jokes/:_id", JokesController.findOneJoke)
     
-    app.delete("/api/jokes/:id", jokesController.deleteOneJoke)
-    
-    app.post("/api/jokes/:id", jokesController.createNewJoke)
+    app.delete("/api/jokes/:_id", JokesController.deleteOneJoke)
+
+    app.put("/api/jokes/:_id", JokesController.updateJoke)
 }

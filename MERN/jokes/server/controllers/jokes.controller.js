@@ -1,10 +1,7 @@
 const Jokes = require("../models/jokes.model")
 
-module.exports = {
- 
-    findAllJokes: (req,res) => {
+    const findAllJokes = (req,res) => {
         Jokes.find()
-        //result of the promise
         .then((allJokes) => {
             console.log(allJokes);
             res.json(allJokes)
@@ -12,56 +9,63 @@ module.exports = {
         .catch((err) => {
             console.log(err);
         })
-    },
+    }
 
-    createNewJoke: (req, res) => {
+   const createNewJoke = (req, res) => {
         Jokes.create(req.body)
         .then((newJoke) => {
         console.log(newJoke);
-        res.jason(newJoke);
+        res.json(newJoke);
         })
         .catch((err)=> {
             console.log(err);
-            res.status(400).json(err);
+            
         })
-    },
+    }
 
-    findOneJoke: (req, res) => {
-        Jokes.findOne({_id: req.params.id})
+    const findOneJoke = (req, res) => {
+        Jokes.findOne({_id: req.params._id})
         .then((oneJoke) => {
             console.log(oneJoke);
-            res.jason(oneJoke);
+            res.json(oneJoke);
             })
             .catch((err)=> {
                 console.log(err);
-                res.status(400).json(err);
+                
             })  
-    },
+    }
 
-    deleteOneJoke: (req, res) => {
-        Jokes.deleteOne({_id: req.params.id})
-        .then((deletedJoke) => {
-            console.log(deletedJoke);
-            res.jason(deletedJoke);
+    const deleteOneJoke = (req, res) => {
+        Jokes.deleteOne({_id: req.params._id})
+        .then((result) => {
+            console.log(result);
+            res.json(result);
             })
             .catch((err)=> {
                 console.log(err);
-                res.status(400).json(err);
+                
             })  
-    },
+    }
 
-    updateJoke: (req, res) => {
-        Jokes.findOneAndUpdate({_id: req.params.id},
+    const updateJoke = (req, res) => {
+        Jokes.findOneAndUpdate({_id: req.params._id},
         req.body,
         {new: true, runValidators: true}
         )
         .then((updatedJoke)=> {
         console.log(updatedJoke);
-        res.jason(updatedJoke);
+        res.json(updatedJoke);
         })
         .catch((err) => {
             console.log(err);
-            res.status(400).json(err);
+            
         })
-    },
+    }
+
+    module.exports = {
+        findAllJokes,
+        createNewJoke,
+        findOneJoke,
+        deleteOneJoke,
+        updateJoke
 }

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const jokesDB = "jokesDB";
 
-mongoose.connect(`mongodb://localhost/${jokesDB}`, {
+mongoose.connect("mongodb://localhost/" + jokesDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 })
