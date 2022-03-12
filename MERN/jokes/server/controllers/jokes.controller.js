@@ -1,9 +1,9 @@
-const jokes = require("../models/jokes.model")
+const Jokes = require("../models/jokes.model")
 
 module.exports = {
  
     findAllJokes: (req,res) => {
-        jokes.find()
+        Jokes.find()
         //result of the promise
         .then((allJokes) => {
             console.log(allJokes);
@@ -15,7 +15,7 @@ module.exports = {
     },
 
     createNewJoke: (req, res) => {
-        jokes.create(req.body)
+        Jokes.create(req.body)
         .then((newJoke) => {
         console.log(newJoke);
         res.jason(newJoke);
@@ -27,7 +27,7 @@ module.exports = {
     },
 
     findOneJoke: (req, res) => {
-        jokes.findOne({_id: req.params.id})
+        Jokes.findOne({_id: req.params.id})
         .then((oneJoke) => {
             console.log(oneJoke);
             res.jason(oneJoke);
@@ -39,7 +39,7 @@ module.exports = {
     },
 
     deleteOneJoke: (req, res) => {
-        jokes.deleteOne({_id: req.params.id})
+        Jokes.deleteOne({_id: req.params.id})
         .then((deletedJoke) => {
             console.log(deletedJoke);
             res.jason(deletedJoke);
@@ -51,7 +51,7 @@ module.exports = {
     },
 
     updateJoke: (req, res) => {
-        jokes.findOneAndUpdate({_id: req.params.id},
+        Jokes.findOneAndUpdate({_id: req.params.id},
         req.body,
         {new: true, runValidators: true}
         )

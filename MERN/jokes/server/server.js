@@ -11,8 +11,8 @@ app.use(cors({
 
 
 require("./config/mongoose.config")
-require("./controllers/jokes.controller")
-require("./models/jokes.model")
+// require("./controllers/jokes.controller")
+// require("./models/jokes.model")
 require("./routes/jokes.routes")(app)
 
 app.listen(8000, () => {
