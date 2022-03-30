@@ -1,33 +1,34 @@
+import React from 'react'
 import './App.css';
-import Names from './components/Names'
+import Person from './components/Person'
 
 function App() {
   return (
     <div className="App">
-      <Names 
+      <Person 
       firstName = { "Paul" }
       lastName = { "Morgan" }
       age = { 52 }
       hairColor   = { "Gray" } 
       />
-      <Names 
+      <Person 
       firstName = { "Brian" }
       lastName = { "Campbell" }
       age = { 45 }
       hairColor   = { "Brown" } 
       />
-      <Names 
+      <Person 
       firstName = { "Annie" }
       lastName = { "Cumberbatch" }
       age = { 27 }
       hairColor   = { "Blonde" } 
       />
-      <Names 
+      <Person 
       firstName = { "Jack" }
       lastName = { "Reacher" }
       age = { 36 }
       hairColor   = { "Blue" } 
-      />
+/>
     </div>
   );
 }
