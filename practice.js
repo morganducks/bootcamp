@@ -1,77 +1,36 @@
-const noMondays = new Promise( (resolve, reject) => {
-        if(new Date().getDay() !== 2) {
-            resolve("Good, it's not Tuesday!");
-        } else {
-            reject("Someone has a case of the Mondays!");
-        }
-    });
-    noMondays
-        .then( res => console.log(res) )
-        .catch( err => console.log(err) );
-    
+// var x = [1,3,5,7]
+// x[x.length-3] = x[x.length/2 + x.length/4]
+// console.log(x)
 
+// var x = [1,3,5,7]
+// x[x.length-3] = x[x.length/2 + x.length/4]
+// console.log(x
+  
+//   var x = [1,3,5,8,2,-5,-8]
+//   // var y = [2,4,6]
+//   var temp = x[x.length-1]
+//   console.log(temp)
+//   x[x.length-1] = x[0]
+// x[0] = temp;
+// console.log(x)
 
-    
-import './App.css';
-import React, {useEffect, useState} from 'react'
+// function a()
+// {
+// return 25;
+// return 50;
+// }
 
-// function App() {
+// console.log(a())
 
-//     const [pokemonNames, setPokemonNames] = useState([]); 
-    
-//     useEffect(() => {
-//       fetch('https://pokeapi.co/api/v2/pokemon?limit=1000')
-//         .then(response => {
-//           return response.json()
-//         })
-//         .then(response => { 
-//           setPokemonNames(response.results)
-//         })
-
-//       .catch((err) => {
-//             console.log(err);
-//           })
-//     }, []);
-    
-function App() {
-  // We expect an array of pokemon objects back and so we will
-  //    choose an empty array as the initial value to be held
-  //    in state
-  const [pokemon, setPokemon] = useState([]);
-
-  // this will run immediately after the JSX is rendered
-  useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=807')
-      .then(response => {
-        // this will return the data from the response object
-        //    in a json format
-        return response.json()
-      })
-      .then(response => {
-        // store the json converted data in state so it can be displayed
-        setPokemon(response.results)
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-    }, []);  
-
-        return(
-        <div className="App">
-      <ul>
-        {
-          //getter then map 
-          pokemonName.map((pokemonNamesObj, index)=>{
-            return (<li key={index}>{pokemonNamesObj.name}</li>)
-          })
-        }
-      </ul>
-    </div>
-    
-        );
-
-
-    
+var x=1;
+var y= 48;
+while (x<100)
+{
+  if (x==y)
+  {
+    break;
+  }
+  x++;
 }
 
-export default App;
+console.log(x)
