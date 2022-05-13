@@ -1,10 +1,33 @@
-var num = 5;
+// let spaces = "He llo World !"
+// let space = " "
+// let countSpaces = 0
 
-console.log(num !== 4)
+// function getSpaces() {
+//     // loop through stright find space
+//     for(let i = 0; i < spaces.length; i++) {
+//         if(spaces[i] === space) {
+//             console.log(spaces[i])
+//             countSpaces++
+//             console.log(countSpaces)
+//         }
+//     }
+// }
 
-//loops
+// getSpaces()
 
-for(var i = 0; i <= 6; i++) {
-    console.log(i)
+
+let spaces = " Ha  ppy S t. Patrick 's D a y! "
+let space = " "
+let concat = ""
+
+function getSpaces(spaces) {
+    for(let i = 0; i < spaces.length; i++) {
+        if(spaces[i] !== space) {
+            concat += spaces[i]
+            // console.log(concat)
+        }
+    }
+    return concat
 }
 
+console.log(getSpaces(spaces))
